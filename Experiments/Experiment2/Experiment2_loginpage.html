@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        .submit {
+            background-color: #e9f9ee;
+            color: #2e7d32;
+            padding: 8px 14px;
+            border: 1px solid #2e7d32;
+            border-radius: 6px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background-color: #2e7d32;
+            /* dark green on hover */
+            color: #fff;
+        }
+
+        .reset {
+            background-color: #fdeaea;
+            color: #c62828;
+            padding: 8px 14px;
+            border: 1px solid #c62828;
+            border-radius: 6px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .reset:hover {
+            background-color: #c62828;
+            /* dark red on hover */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        Login Page
+        <br>
+        <br>
+        <label for="user-name">User Name: </label>
+        <input type="text" name="UserName" id="user-name" placeholder="Enter User Name">
+        <br><br>
+        <label for="pass">Password: </label>
+        <input type="password" name="passwor" id="pass" placeholder="Enter Password">
+        <br><br>
+        <input type="submit" name="" id="" class="submit">
+        <input type="reset" name="" id="" class="reset">
+    </form>
+</body>
+
+</html>
