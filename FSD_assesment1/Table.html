@@ -11,7 +11,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            
+
         }
 
         body {
@@ -47,7 +47,8 @@
             overflow: hidden;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 12px 15px;
             text-align: left;
@@ -82,11 +83,34 @@
         }
 
         a:hover {
-            color: #004d40;transition: color 0.s ease;
+            color: #004d40;
+            transition: color 0.s ease;
 
         }
-        table:hover{
-            transform: scale(1.20);transition: transform 0.5s ease;
+
+        table:hover {
+            /* transform: scale(1.20); */
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card {
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card h1 {
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card table {
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover h1 {
+            transform: translateY(-28px);
+        }
+
+        .profile-card:hover table {
+            transform: scale(1.20);
         }
     </style>
 </head>
@@ -127,7 +151,8 @@
             <tr>
                 <td colspan="2">
                     <div class="links">
-                        <a href="https://github.com/vharshit-yk">Github</a> | <a href="https://www.linkedin.com/in/harshit-verma-341095336/">Linkedin</a>
+                        <a href="https://github.com/vharshit-yk">Github</a> | <a
+                            href="https://www.linkedin.com/in/harshit-verma-341095336/">Linkedin</a>
                     </div>
                 </td>
             </tr>
