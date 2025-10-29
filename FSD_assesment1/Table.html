@@ -8,50 +8,96 @@
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
-            padding: 10px;
-        }
-
-        img{
             padding: 0;
             margin: 0;
-            /* border: 1px solid black; */
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            background-color: #f2f2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(galaxy.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        img {
+            padding: 0;
+            margin: 0;
             border-radius: 50%;
         }
 
         h1 {
             text-decoration: underline;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        table,
-        tr,
-        td {
-            border: 3px solid black;
+        table {
+            border: 2px solid #ccc;
             border-collapse: collapse;
+            width: 400px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        div {
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            /* background-color: #e0f7fa; */
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .photo {
             display: flex;
-            align-items: center;
             justify-content: center;
+            padding: 15px 0;
         }
 
-        a {
+        .links {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .links a {
             text-decoration: none;
+            color: #009688;
+            font-weight: bold;
+            margin: 0 8px;
+        }
+
+        a:hover {
+            color: #004d40;transition: color 0.s ease;
+
+        }
+        table:hover{
+            transform: scale(1.20);transition: transform 0.5s ease;
         }
     </style>
 </head>
 
 <body>
-    <div class="heading">
-
+    <div class="profile-card">
         <h1>Profile Card</h1>
-    </div>
-    <div class="table">
-
 
         <table>
             <tr>
-                <td colspan="4">
+                <td colspan="2">
                     <div class="photo">
                         <img src="ProfilePhoto.jpg" alt="Profile Picture" height="100px">
                     </div>
@@ -75,20 +121,16 @@
             </tr>
             <tr>
                 <th>About</th>
-                <td>Enthusiastic student pursuing Bachelor's in Technology, Passionate about coding and
-                    learning.
-                </td>
+                <td>Enthusiastic student pursuing Bachelor's in Technology, passionate about coding and
+                    learning.</td>
             </tr>
             <tr>
-
-                <td colspan="4">
+                <td colspan="2">
                     <div class="links">
-                        <a href="">Github</a> | <a href="">Linkedin</a>
+                        <a href="https://github.com/vharshit-yk">Github</a> | <a href="https://www.linkedin.com/in/harshit-verma-341095336/">Linkedin</a>
                     </div>
                 </td>
-
             </tr>
-
         </table>
     </div>
 </body>
