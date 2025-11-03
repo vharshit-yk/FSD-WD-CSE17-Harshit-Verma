@@ -8,9 +8,14 @@
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            background-color: #fafafa;
             color: #333;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #fafafa;
+            text-align: center;
         }
 
         th {
@@ -45,23 +50,27 @@
             align-items: center;
             justify-content: center;
         }
-        /* td.iframe-cell {
-            height: 90vh;
+
+        table {
+            width: 100vw;
+            height: 95vh;
+        }
+
+        .iframe-cell {
             padding: 0;
         }
 
-        td.iframe-cell iframe {
+        iframe {
             width: 100%;
             height: 100%;
             border: none;
-        } */
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
-
-        <table border="3" style="height: 95vh; width: 100vw;">
+        <table>
             <tr>
                 <th>Logo</th>
                 <th colspan="4">Website Name</th>
@@ -71,14 +80,12 @@
                 <td><a href="Experiment2_loginpage.html" target="iframe_a">Login</a></td>
                 <td>Registeration</td>
                 <td><a href="Experiment2_cataloguepage.html" target="iframe_a">Catalogue</a></td>
-                <td>Cart</td>
+                <td><a href="Experiment4_cartDetails.html" target="iframe_a">Cart</a></td>
             </tr>
             <tr>
                 <td><a href="Experiment2_CSE.html" target="iframe_a">CSE</a></td>
-                <td rowspan="4" colspan="4" style="text-align: center; height: 80vh";" class="iframe-cell">
-                    <iframe src="Experiment2_WebDesc.html" name="iframe_a" title="Iframe Example" style="border: none"
-                    height="200px">
-                    </iframe>
+                <td rowspan="4" colspan="4" class="iframe-cell">
+                    <iframe src="Experiment2_WebDesc.html" name="iframe_a" title="Iframe Example"></iframe>
                 </td>
             </tr>
             <tr>
